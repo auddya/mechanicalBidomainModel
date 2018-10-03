@@ -1,0 +1,49 @@
+\documentclass[a4paper,oneside,11pt]{report}
+\usepackage[cm]{fullpage}
+\usepackage{lmodern,amsmath,amssymb}
+\usepackage{a4wide}
+\setlength{\marginparwidth}{3cm}
+\setlength{\topmargin}{0cm}
+\setlength{\voffset}{0cm}
+\setlength{\headsep}{0cm}
+\title{Modeling Durotaxis using Mechanical Bidomain model}
+\begin{document}
+\maketitle
+\section*{Analytical treatment}
+The equations formulated below consider a gradient in the extracellular stiffness in a 1-d strand of tissue using the mechanical bidomain model. \\
+
+Consider $u_{x}$ and $w_{x}$ as the intra- and extra-cellular displacements of the bidomain layer. x being the principal direction of the one-dimensional tissue strand, T being the tension, p and q being the intra- and extra-cellular pressure contributions arising mostly from hydrostatic forces. \\
+
+The standard equations of the bidomain model are as follows \cite{roth2012}: 
+\begin{align}
+-\frac{\partial p}{\partial x} + \nu(\frac{\partial^{2}u_x}{\partial x^2} + \frac{\partial^{2}u_x}{\partial y^2} ) + \gamma\frac{\partial^{2}u_x}{\partial x^2} + \frac{\partial T}{\partial x} = K(u_x - w_x) \\
+-\frac{\partial q}{\partial x} + \mu(\frac{\partial^{2}w_x}{\partial x^2} + \frac{\partial^{2}w_x}{\partial y^2} ) = -K(u_x - w_x) 
+\end{align}   
+For this problem we consider:
+\begin{itemize} 
+\item $\mu = \mu_0 + gx$ 
+\item No contributions along the y axis
+\item p,q and T are constant and hence their gradients are zero along the x axis
+\item Slope of $\mu$ is a constant 
+\item K is same for intra- and extra-cellular displacements
+\end{itemize}
+\begin{align}
+    \nu\frac{\partial^{2}u_x}{\partial x^2} + \gamma\frac{\partial^{2}u_x}{\partial x^2} = K(u_x - w_x)  \\
+    \mu_0\frac{\partial^{2}w_x}{\partial x^2} + gx\frac{\partial^{2}w_x}{\partial x^2} = -K(u_x - w_x) 
+\end{align}
+Simplifying the above expression, replacing $u_x$ in equation (2) from (1): 
+\begin{align}
+   u_x = w_x + \frac{\nu}{K}\frac{\partial^{2}u_x}{\partial x^2} + \frac{\gamma}{K}\frac{\partial^{2}u_x}{\partial x^2} + \gamma\frac{\partial^{2}u_x}{\partial x^2} \\
+   \therefore \frac{\mu_0}{K}\frac{\partial^{2}w_x}{\partial x^2} + x\frac{g}{k}\frac{\partial^{2}w_x}{\partial x^2} = - ( \frac{\nu}{K}\frac{\partial^{2}u_x}{\partial x^2} + \frac{\gamma}{K}\frac{\partial^{2}u_x}{\partial x^2} )
+\end{align}
+Final form the equation can be written as: 
+\begin{align}
+\frac{\partial^{2}w_x}{\partial x^2} (\frac{\mu_0}{K} + \frac{gx}{K}) + \frac{\partial^{2}u_x}{\partial x^2} (\frac{\nu}{K} + \frac{\gamma}{K} ) = 0
+\end{align}
+\begin{thebibliography}{9}
+	\bibitem{roth2012}
+	Bradley J Roth
+	\textit{The Mechanical Bidomain Model: A Review}
+	ISRN Tissue Eng. 2013
+\end{thebibliography}
+\end{document}
