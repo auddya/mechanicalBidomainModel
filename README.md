@@ -2,7 +2,7 @@
 
 This is a consolidated repository of the collaborative research work at the Department of Physics, Oakland University, Michigan and Department of Mechanical Engineering, University of Wisconsin-Madison. 
 
-**Primary Collaborator:** Prof. Brad Roth\
+**Primary Collaborator:** [Prof. Brad Roth](https://files.oakland.edu/users/roth/web/) \
 **Email:** [roth@oakland.edu](roth@oakland.edu),[auddya@wisc.edu](auddya@wisc.edu) \
 **Graduate Student Collaborator:** [Debabrata Auddya](https://scholar.google.com/citations?user=2DxUug0AAAAJ&hl=en) \
 **Project URL:** [The Mechanical Bidomain Model](https://github.com/auddya/mechanicalBidomainModel) 
