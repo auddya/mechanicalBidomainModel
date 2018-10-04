@@ -7,9 +7,16 @@
 \setlength{\voffset}{0cm}
 \setlength{\headsep}{0cm}
 \title{Modeling Durotaxis using Mechanical Bidomain model}
+%\usepackage{etoolbox}
+%\preto\equation{\setcounter{equation}{0}}
+%\makeatletter
+%\pretocmd\start@gather{\setcounter{equation}{0}}{}{}
+%\pretocmd\start@align{\setcounter{equation}{0}}{}{}
+%\pretocmd\start@multline{\setcounter{equation}{0}}{}{}
+%\makeatother
 \begin{document}
 \maketitle
-\section*{Analytical treatment}
+\section*{Analytical treatment - 10/03/2018}
 The equations formulated below consider a gradient in the extracellular stiffness in a 1-d strand of tissue using the mechanical bidomain model. \\
 
 Consider $u_{x}$ and $w_{x}$ as the intra- and extra-cellular displacements of the bidomain layer. x being the principal direction of the one-dimensional tissue strand, T being the tension, p and q being the intra- and extra-cellular pressure contributions arising mostly from hydrostatic forces. \\
@@ -40,10 +47,42 @@ Final form the equation can be written as:
 \begin{align}
 \frac{\partial^{2}w_x}{\partial x^2} (\frac{\mu_0}{K} + \frac{gx}{K}) + \frac{\partial^{2}u_x}{\partial x^2} (\frac{\nu}{K} + \frac{\gamma}{K} ) = 0
 \end{align}
+\clearpage
+\section*{Analytical treatment - 10/04/2018}
+The equations formulated below consider a gradient in the extracellular stiffness in a 1-d strand of tissue using the mechanical bidomain model. \\
+
+Consider $u_{x}$ and $w_{x}$ as the intra- and extra-cellular displacements of the bidomain layer. x being the principal direction of the one-dimensional tissue strand, T being the tension, p and q being the intra- and extra-cellular pressure contributions arising mostly from hydrostatic forces. \\
+
+The intra and extra-cellular stresses arising in the 1-d strand of tissue can be expressed as \cite{roth2015}: 
+\begin{align}
+\tau_{ix} = -p + 2\nu\epsilon_{ix} + T \\
+\tau_{ex} = -q + 2\mu(x)\epsilon_{ex}   
+\end{align}
+Relationship between the strains and displacement can be written as: 
+\begin{align}
+\frac{\partial\tau_{ix}}{\partial x} = K (u_x - w_x) \\
+\frac{\partial\tau_{ex}}{\partial x} = - K (u_x - w_x) 
+\end{align}
+Using equation (8) and (9) in (10) and (11) the resulting intra- and extra-cellular equations are: 
+\begin{align}
+\frac{\partial}{\partial x}(-p + 2\nu\frac{\partial u_x}{\partial x}) = K (u_x - w_x) \\
+\frac{\partial}{\partial x}(-q + 2\mu (x) \frac{\partial w_x}{\partial x}) = -K (u_x - w_x)
+\end{align}
+For the problem we have assumed $\mu = \mu_0 + gx$ , where g is a constant. Rewriting (12) and (13) we have:
+\begin{align}
+- \frac{\partial p}{\partial x} + 2\nu\frac{\partial^{2}u_x}{\partial x^2} = K (u_x - w_x) \\
+- \frac{\partial q}{\partial x} + 2(g\frac{\partial w_x}{\partial x} + \frac{\partial^{2}w_x}{\partial x^2} \mu(x)) = -K(u_x - w_x)
+\end{align}
+
 \begin{thebibliography}{9}
 	\bibitem{roth2012}
 	Bradley J Roth
 	\textit{The Mechanical Bidomain Model: A Review}
 	ISRN Tissue Eng. 2013
+	
+	\bibitem{roth2015}
+	 Sharma, Kharananda; Al-Asuoad, Nofe; Shillor, Meir; Roth, Bradley J.
+	\textit{Intracellular, extracellular, and membrane forces in remodeling and mechanotransduction: The mechanical bidomain model}
+	Journal of Coupled Systems and Multiscale Dynamics, Volume 3, Number 3, September 2015, pp. 200-207(8)
 \end{thebibliography}
 \end{document}
