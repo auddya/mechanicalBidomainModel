@@ -73,7 +73,40 @@ For the problem we have assumed $\mu = \mu_0 + gx$ , where g is a constant. Rewr
 - \frac{\partial p}{\partial x} + 2\nu\frac{\partial^{2}u_x}{\partial x^2} = K (u_x - w_x) \\
 - \frac{\partial q}{\partial x} + 2(g\frac{\partial w_x}{\partial x} + \frac{\partial^{2}w_x}{\partial x^2} \mu(x)) = -K(u_x - w_x)
 \end{align}
-
+\clearpage
+\section*{Analytical treatment - 11/13/2018}
+In order to obtain an analytical solution for the problem initially we consider g = 0. The boundary limits of the 1-dimensional problem assume the length of the domain spanning form x=-L to x=+L. The stresses are taken to be zero at each of the boundaries. We begin by implementing a trial solution for $u_x$ and $w_x$.
+\begin{align}
+u_x = Ax + Bsinh \Big ( \frac{x}{\sigma} \Big )\\
+w_x = Cx + Dsinh \Big ( \frac{x}{\sigma} \Big )
+\end{align}
+For estimating the values of A,B,C,D we assume additionally p=q=0. 
+Rewriting (12):
+\begin{align}
+2\nu\frac{\partial^{2}}{\partial x^2}\Big ( Ax + Bsinh\Big ( \frac{x}{\sigma} \Big ) \Big ) = K \Big ( Ax + Bsinh \Big ( \frac{x}{\sigma} \Big ) - Cx - Dsinh \Big ( \frac{x}{\sigma} \Big )  \Big )\\
+2\nu\frac{\partial}{\partial x} \Big ( A + \frac{B}{\sigma}cosh)\Big ( \frac{x}{\sigma} \Big ) = K \Big ((A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big ) )\\
+2\nu\frac{B}{\sigma^2} sinh\Big ( \frac{x}{\sigma} \Big ) = K \Big ( (A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big )\Big )
+\end{align}
+and (13)
+\begin{align}
+2\mu(x)\frac{\partial^{2}}{\partial x^2}\Big ( Cx + Dsinh\Big ( \frac{x}{\sigma} \Big ) \Big ) = -K \Big ( Ax + Bsinh \Big ( \frac{x}{\sigma} \Big ) - Cx - Dsinh \Big ( \frac{x}{\sigma} \Big )  \Big )\\
+2\mu(x)\frac{\partial}{\partial x} \Big ( C + \frac{D}{\sigma}cosh)\Big ( \frac{x}{\sigma} \Big ) = -K \Big ((A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big ) )\\
+2\mu(x)\frac{D}{\sigma^2} sinh\Big ( \frac{x}{\sigma} \Big ) = -K \Big ( (A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big )\Big )
+\end{align}
+From (20) and (23) we have:
+\begin{align}
+D = -\frac{\nu}{\mu(x)} B
+\end{align}
+Comparing coefficients of hyperbolic sine terms we see that (20) and (23) is satisfied only when the coefficient of the linear term is zero. Therefore,
+\begin{align}
+A = C
+\end{align}
+Hence the length constant\footnote{This might also be a variable since $\mu$ is a function of x for the problem} $\sigma$ has the value
+\begin{equation}
+\begin{aligned}
+\sigma = \sqrt{\frac{2\nu\mu}{K(\nu + \mu)}}
+\end{aligned}
+\end{equation}
 \begin{thebibliography}{9}
 	\bibitem{roth2012}
 	Bradley J Roth
