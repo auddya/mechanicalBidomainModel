@@ -84,13 +84,13 @@ For estimating the values of A,B,C,D we assume additionally p=q=0.
 Rewriting (12):
 \begin{align}
 2\nu\frac{\partial^{2}}{\partial x^2}\Big ( Ax + Bsinh\Big ( \frac{x}{\sigma} \Big ) \Big ) = K \Big ( Ax + Bsinh \Big ( \frac{x}{\sigma} \Big ) - Cx - Dsinh \Big ( \frac{x}{\sigma} \Big )  \Big )\\
-2\nu\frac{\partial}{\partial x} \Big ( A + \frac{B}{\sigma}cosh)\Big ( \frac{x}{\sigma} \Big ) = K \Big ((A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big ) )\\
+2\nu\frac{\partial}{\partial x} \Big ( A + \frac{B}{\sigma}cosh\Big ( \frac{x}{\sigma} \Big ) \Big ) = K \Big ((A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big ) )\\
 2\nu\frac{B}{\sigma^2} sinh\Big ( \frac{x}{\sigma} \Big ) = K \Big ( (A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big )\Big )
 \end{align}
 and (13)
 \begin{align}
 2\mu(x)\frac{\partial^{2}}{\partial x^2}\Big ( Cx + Dsinh\Big ( \frac{x}{\sigma} \Big ) \Big ) = -K \Big ( Ax + Bsinh \Big ( \frac{x}{\sigma} \Big ) - Cx - Dsinh \Big ( \frac{x}{\sigma} \Big )  \Big )\\
-2\mu(x)\frac{\partial}{\partial x} \Big ( C + \frac{D}{\sigma}cosh)\Big ( \frac{x}{\sigma} \Big ) = -K \Big ((A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big ) )\\
+2\mu(x)\frac{\partial}{\partial x} \Big ( C + \frac{D}{\sigma}cosh\Big ( \frac{x}{\sigma} \Big ) \Big ) = -K \Big ((A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big ) )\\
 2\mu(x)\frac{D}{\sigma^2} sinh\Big ( \frac{x}{\sigma} \Big ) = -K \Big ( (A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big )\Big )
 \end{align}
 From (20) and (23) we have:
@@ -101,12 +101,29 @@ Comparing coefficients of hyperbolic sine terms we see that (20) and (23) is sat
 \begin{align}
 A = C
 \end{align}
-Hence the length constant\footnote{This might also be a variable since $\mu$ is a function of x for the problem} $\sigma$ has the value
+Hence the length constant\footnote{This might also be a variable since $\mu$ is a function of x for the problem} $\sigma$ has the value\footnote{$\mu(x)$ is also written as $\mu$}
 \begin{equation}
 \begin{aligned}
 \sigma = \sqrt{\frac{2\nu\mu}{K(\nu + \mu)}}
 \end{aligned}
 \end{equation}
+To obtain the values of the unknown parameters B and C, we impose boundary conditions. At the edge (x = $\pm$L) we have, normal stresses $\tau_{ix}$ and $\tau_{ex}$ as zero. As a result we get,
+\begin{align}
+C + \frac{D}{\sigma}cosh\Big ( \frac{x}{\sigma} \Big ) = 0\\
+A + \frac{B}{\sigma}cosh\Big ( \frac{x}{\sigma} \Big ) = -\frac{T}{2\nu}
+\end{align} 
+Solving (27) and (28) using (24)-(26) we have:
+\begin{align}
+A = C = -\frac{T}{2(\nu + \mu)}\\
+B = -\frac{T}{2\nu}\Big ( \frac{\mu}{\nu + \mu} \Big )\frac{\sigma}{cosh(\frac{L}{\sigma})}\
+, D = \frac{T}{2(\mu + \nu)}\frac{\sigma}{cosh(\frac{L}{\sigma})}
+\end{align}
+Using this we get the intra and extracellular displacement in terms of T as:
+\begin{align}
+u_x = -\frac{T}{2(\nu + \mu)} \Big ( x + \frac{\mu}{\nu} \sigma \frac{sinh(\frac{x}{\sigma})}{cosh(\frac{L}{\sigma})}\Big )\\
+w_x = -\frac{T}{2(\nu + \mu)} \Big ( x - \sigma \frac{sinh(\frac{x}{\sigma})}{cosh(\frac{L}{\sigma})}\Big )
+\end{align}
+Since $\mu$ is variable for the problem we now write it as: $\mu = \mu_0 + gx$. Remaining derivation of $u_x$ and $w_x$ along with its derivatives and double derivatives has been attached separately. 
 \begin{thebibliography}{9}
 	\bibitem{roth2012}
 	Bradley J Roth
@@ -119,3 +136,4 @@ Hence the length constant\footnote{This might also be a variable since $\mu$ is 
 	Journal of Coupled Systems and Multiscale Dynamics, Volume 3, Number 3, September 2015, pp. 200-207(8)
 \end{thebibliography}
 \end{document}
+ 
