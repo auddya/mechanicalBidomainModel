@@ -7,6 +7,7 @@
 \setlength{\voffset}{0cm}
 \setlength{\headsep}{0cm}
 \title{Modeling Durotaxis using Mechanical Bidomain model}
+\author{Prof Brad Roth, Debabrata Auddya}
 %\usepackage{etoolbox}
 %\preto\equation{\setcounter{equation}{0}}
 %\makeatletter
@@ -14,6 +15,36 @@
 %\pretocmd\start@align{\setcounter{equation}{0}}{}{}
 %\pretocmd\start@multline{\setcounter{equation}{0}}{}{}
 %\makeatother
+\usepackage{listings}
+\usepackage{color}
+\usepackage{dsfont}
+\usepackage{footmisc}
+\usepackage{verbatim}
+\usepackage{smartdiagram}
+\setlength{\marginparwidth}{0cm}
+\setlength{\topmargin}{0cm}
+\setlength{\voffset}{0cm}
+\setlength{\headsep}{0cm}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
 \begin{document}
 \maketitle
 \section*{Analytical treatment - 10/03/2018}
@@ -109,8 +140,8 @@ Hence the length constant\footnote{This might also be a variable since $\mu$ is 
 \end{equation}
 To obtain the values of the unknown parameters B and C, we impose boundary conditions. At the edge (x = $\pm$L) we have, normal stresses $\tau_{ix}$ and $\tau_{ex}$ as zero. As a result we get,
 \begin{align}
-C + \frac{D}{\sigma}cosh\Big ( \frac{x}{\sigma} \Big ) = 0\\
-A + \frac{B}{\sigma}cosh\Big ( \frac{x}{\sigma} \Big ) = -\frac{T}{2\nu}
+C + \frac{D}{\sigma}cosh\Big ( \frac{L}{\sigma} \Big ) = 0\\
+A + \frac{B}{\sigma}cosh\Big ( \frac{L}{\sigma} \Big ) = -\frac{T}{2\nu}
 \end{align} 
 Solving (27) and (28) using (24)-(26) we have:
 \begin{align}
@@ -124,6 +155,111 @@ u_x = -\frac{T}{2(\nu + \mu)} \Big ( x + \frac{\mu}{\nu} \sigma \frac{sinh(\frac
 w_x = -\frac{T}{2(\nu + \mu)} \Big ( x - \sigma \frac{sinh(\frac{x}{\sigma})}{cosh(\frac{L}{\sigma})}\Big )
 \end{align}
 Since $\mu$ is variable for the problem we now write it as: $\mu = \mu_0 + gx$. Remaining derivation of $u_x$ and $w_x$ along with its derivatives and double derivatives has been attached separately. 
+\newpage
+\section*{Analytical treatment - 12/21/2018}
+We are considering plane stress conditions for the model. Nothing depends on y. 
+\begin{align*}
+\tau_{exx} = -q + 2\mu\epsilon_{exx} \\
+\tau_{eyy} = -q \\
+\tau_{ezz} = -q + 2\mu\epsilon_{ezz} \\
+\end{align*}
+Since $\tau_{ezz}$  = 0 so
+\begin{align*}
+-q + 2\mu\epsilon_{ezz} = 0
+\end{align*}
+or, $q=2\mu\epsilon_{ezz}$, but, $\epsilon_{exx} + \epsilon_{ezz} = 0$, so 
+\begin{align*}
+q=-2\mu\epsilon_{exx}
+\end{align*}
+Therefore the stresses along the principal directions can be written as:
+\begin{align*}
+\tau_{exx} = 4\mu\epsilon_{exx} \hspace{0.5cm} \tau_{eyy} = 2\mu\epsilon_{exx}\hspace{0.5cm} \tau_{ezz}=0\hspace{0.5cm}\tau_{exy}=0
+\end{align*}
+The final partial differential form of the equations look like: 
+\begin{align*}
+\frac{\partial\tau_{exx}}{\partial x} + \frac{\partial\tau_{exy}}{\partial y} = -K(u_x - w_x) \\
+or, \hspace{0.5cm}4\Big ( \frac{\partial \mu}{\partial x}\epsilon_{exx}  + \mu \frac{\partial \epsilon_{exx}}{\partial x}\Big ) = -K(u_x - w_x)
+\end{align*}
+For the intracellular layer the principal stress is the same except that Tension T along the principal direction (x) is also taken into account. Thus the final set of working equations are, considering $\mu$ has a gradient along x and $\nu$ is a constant for the problem. 
+\[\boxed{\!\begin{aligned}
+	&4\mu\frac{\partial^2 w}{\partial x^2} + 4\frac{\partial w}{\partial x}\frac{\partial \mu}{\partial x} = -K(u_x - w_x) \\
+ &4\nu\frac{\partial^2 u}{\partial x^2} = K(u_x - w_x)
+\end{aligned}
+}
+\]
+\section*{$\mu$ = constant }
+\[\boxed{\!\begin{aligned}
+	&4\mu\frac{\partial^2 w}{\partial x^2} = -K(u_x - w_x) \\
+	&4\nu\frac{\partial^2 u}{\partial x^2} = K(u_x - w_x)
+	\end{aligned}
+}
+\]
+The stresses are taken to be zero at each of the boundaries. We begin by implementing a trial solution for $u_x$ and $w_x$.
+\begin{align*}
+u_x = Ax + Bsinh \Big ( \frac{x}{\sigma} \Big )\\
+w_x = Cx + Dsinh \Big ( \frac{x}{\sigma} \Big )
+\end{align*}
+For estimating the values of A,B,C,D we assume: 
+Rewriting (12):
+\begin{align*}
+4\nu\frac{\partial^{2}}{\partial x^2}\Big ( Ax + Bsinh\Big ( \frac{x}{\sigma} \Big ) \Big ) = K \Big ( Ax + Bsinh \Big ( \frac{x}{\sigma} \Big ) - Cx - Dsinh \Big ( \frac{x}{\sigma} \Big )  \Big )\\
+4\nu\frac{\partial}{\partial x} \Big ( A + \frac{B}{\sigma}cosh\Big ( \frac{x}{\sigma} \Big ) \Big ) = K \Big ((A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big ) )\\
+4\nu\frac{B}{\sigma^2} sinh\Big ( \frac{x}{\sigma} \Big ) = K \Big ( (A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big )\Big )
+\end{align*}
+and (13)
+\begin{align*}
+4\mu(x)\frac{\partial^{2}}{\partial x^2}\Big ( Cx + Dsinh\Big ( \frac{x}{\sigma} \Big ) \Big ) = -K \Big ( Ax + Bsinh \Big ( \frac{x}{\sigma} \Big ) - Cx - Dsinh \Big ( \frac{x}{\sigma} \Big )  \Big )\\
+4\mu(x)\frac{\partial}{\partial x} \Big ( C + \frac{D}{\sigma}cosh\Big ( \frac{x}{\sigma} \Big ) \Big ) = -K \Big ((A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big ) )\\
+4\mu(x)\frac{D}{\sigma^2} sinh\Big ( \frac{x}{\sigma} \Big ) = -K \Big ( (A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big )\Big )
+\end{align*}
+From (20) and (23) we have:
+\begin{align}
+D = -\frac{\nu}{\mu} B
+\end{align}
+Comparing coefficients of hyperbolic sine terms we see that (20) and (23) is satisfied only when the coefficient of the linear term is zero. Therefore,
+\begin{align}
+A = C
+\end{align}
+Length constant $\sigma$ remains as: 
+\begin{align}
+	\sigma = \sqrt{\frac{4\nu\mu}{K(\nu + \mu)}}
+\end{align}
+To obtain the values of the unknown parameters B and C, we impose boundary conditions. At the edge (x = $\pm$L) we have, normal stresses $\tau_{ix}$ and $\tau_{ex}$ as zero. As a result we get,
+\begin{align}
+C + \frac{D}{\sigma}cosh\Big ( \frac{L}{\sigma} \Big ) = 0\\
+A + \frac{B}{\sigma}cosh\Big ( \frac{L}{\sigma} \Big ) = -\frac{T}{4\nu}
+\end{align}
+Solving the equations using given by (33) - (35) and using them in (36) and (37) we have: 
+Solving (27) and (28) using (24)-(26) we have:
+\begin{align}
+A = C = -\frac{T}{4(\nu + \mu)}\\
+B = -\frac{T}{4\nu}\Big ( \frac{\mu}{\nu + \mu} \Big )\frac{\sigma}{cosh(\frac{L}{\sigma})}\
+, D = \frac{T}{4(\mu + \nu)}\frac{\sigma}{cosh(\frac{L}{\sigma})}
+\end{align}
+Using this we get the intra and extracellular displacement in terms of T as:
+\begin{align}
+u_x = -\frac{T}{4(\nu + \mu)} \Big ( x + \frac{\mu}{\nu} \sigma \frac{sinh(\frac{x}{\sigma})}{cosh(\frac{L}{\sigma})}\Big )\\
+w_x = -\frac{T}{4(\nu + \mu)} \Big ( x - \sigma \frac{sinh(\frac{x}{\sigma})}{cosh(\frac{L}{\sigma})}\Big )
+\end{align}
+\section*{$\mu = \mu_0$ + gx }
+For this condition the set of equations which we need to consider for obtaining an analytical solution are: 
+\begin{align}
+4\mu\frac{\partial^2 w}{\partial x^2} + 4\frac{\partial w}{\partial x}\frac{\partial \mu}{\partial x} = -K(u_x - w_x) \\
+4\nu\frac{\partial^2 u}{\partial x^2} = K(u_x - w_x)
+\end{align}
+Replacing unknowns term by term from the previous solutions and given data we have an expression for the difference between $u_x$ and $w_x$: 
+%\begin{align*}
+\[\boxed{\frac{-4}{K}(\mu_0 + gx )\frac{\partial^2}{\partial x^2}\Bigg( -\frac{T}{4(\nu + \mu)} \Big ( x - \sigma \frac{sinh(\frac{x}{\sigma})}{cosh(\frac{L}{\sigma})}\Big )\Bigg) - \frac{4g}{K}\frac{\partial}{\partial x}\Bigg( -\frac{T}{4(\nu + \mu)} \Big ( x - \sigma \frac{sinh(\frac{x}{\sigma})}{cosh(\frac{L}{\sigma})}\Big )\Bigg)}\]
+%\end{align*}
+\section*{Mathematica Code}
+The code below returns the value of the above expression. f(x) returns the value of $u_x - w_x$
+\begin{lstlisting}
+sigma[x_] = ((4*(muz + gx)*nu)/(K*(nu+muz+gx)))^0.5
+g[x_] = -(Tx/(4*(nu+muz+gx))) + ((T*sigma[x_]*sinh[x/sigma[x]])/(4*(nu+muz+gx)*cosh[L/sigma[x]]))
+g'[x_]
+g''[x_]
+f[x_] = (-4/K)*(muz+gx)*g''[x] + (-4*g/K)*g'[x] 
+\end{lstlisting}
 \begin{thebibliography}{9}
 	\bibitem{roth2012}
 	Bradley J Roth
