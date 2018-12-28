@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 DEC 2018 01:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 DEC 2018 21:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -876,40 +876,41 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 256
 .
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [7] [8
+) [7] [8] [9] [10] [11
 
 ] (./notebook.aux) ) 
 Here is how much of TeX's memory you used:
- 22872 strings out of 492995
- 458079 string characters out of 6132704
- 512449 words of memory out of 5000000
- 26045 multiletter control sequences out of 15000+600000
- 56622 words of font info for 67 fonts, out of 8000000 for 9000
+ 22882 strings out of 492995
+ 458194 string characters out of 6132704
+ 522450 words of memory out of 5000000
+ 26050 multiletter control sequences out of 15000+600000
+ 73892 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,73p,10416b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,73p,10416b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-r
 m.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/
 local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texl
 ive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/t
 exmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2017/texmf-dist/
-fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
-1/public/lm/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/l
-m/lmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
-ic/lm/lmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on notebook.pdf (9 pages, 267005 bytes).
+fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/public/lm/lmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/l
+m/lmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr6
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msam10.pfb>
+Output written on notebook.pdf (12 pages, 299461 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 146 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

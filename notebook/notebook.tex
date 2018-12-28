@@ -156,7 +156,7 @@ w_x = -\frac{T}{2(\nu + \mu)} \Big ( x - \sigma \frac{sinh(\frac{x}{\sigma})}{co
 \end{align}
 Since $\mu$ is variable for the problem we now write it as: $\mu = \mu_0 + gx$. Remaining derivation of $u_x$ and $w_x$ along with its derivatives and double derivatives has been attached separately. 
 \newpage
-\section*{Analytical treatment - 12/21/2018}
+\section*{Analytical treatment - 12/22/2018}
 We are considering plane stress conditions for the model. Nothing depends on y. 
 \begin{align*}
 \tau_{exx} = -q + 2\mu\epsilon_{exx} \\
@@ -260,12 +260,98 @@ g'[x_]
 g''[x_]
 f[x_] = (-4/K)*(muz+gx)*g''[x] + (-4*g/K)*g'[x] 
 \end{lstlisting}
+\newpage
+\section*{Analytical treatment - 12/28/2018}
+We assume the trial solution for $u_x$ and $w_x$ for the given problem as: 
+\begin{align}
+u_x = Ax + Bsinh \Big ( \frac{x}{\sigma} \Big )\\
+w_x = Cx + Dsinh \Big ( \frac{x}{\sigma} \Big )
+\end{align}
+Additionally the extracellular gradient is taken as $\mu = \mu_0 + gx$. The final set of working equations are taken as: 
+\[\boxed{\!\begin{aligned}
+	&4\mu\frac{\partial^2 w}{\partial x^2} + 4\frac{\partial w}{\partial x}\frac{\partial \mu}{\partial x} = -K(u_x - w_x) \\
+	&4\nu\frac{\partial^2 u}{\partial x^2} = K(u_x - w_x)
+	\end{aligned}
+}
+\]
+Replacing the values for u and w with that of (44)-(45) we have
+\begin{align}
+4(\mu_0 + gx)\frac{D}{\sigma^2}sinh(\frac{x}{\sigma}) + 4g(C + \frac{D}{\sigma}cosh(\frac{x}{\sigma})) = -K \Big ( (A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big )\Big )\\
+4\nu\frac{B}{\sigma^2}sinh(\frac{x}{\sigma}) = K \Big ( (A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big )\Big )
+\end{align}
+Using boundary conditions on $\epsilon_{exx} = 0$ at x=L (Since we have $\tau_{exx} = 0$ at x=$\pm$L )
+\begin{align*}
+\frac{\partial w}{\partial x} = 0\\
+\therefore \hspace{0.5cm}
+C + \frac{D}{\sigma}cosh(\frac{x}{\sigma}) = 0\\
+\end{align*}
+Plugging the above result in equation (46) and (47) we have: 
+\begin{align*}
+(\mu_0 + gx)\frac{D}{\sigma^2}sinh(\frac{L}{\sigma}) = -\nu\frac{B}{\sigma^2}sinh(\frac{L}{\sigma})
+\end{align*}
+\[\boxed{
+D = -\frac{\nu}{\mu_0 + gL} B
+}
+\]
+For finding relation between A and C we manipulate equation (47) with the relationship between B and D
+\begin{align*}
+4\nu\frac{B}{\sigma^2}sinh(\frac{x}{\sigma}) = K \Big ( (A - C)x + (B - D)sinh\Big ( \frac{x}{\sigma} \Big )\Big )\\
+\textit{or,} \hspace{0.35cm} 4\nu\frac{B}{\sigma^2}sinh\Big (\frac{x}{\sigma} \Big ) - K (B - D)sinh\Big ( \frac{x}{\sigma} \Big ) = K (A - C)x \\
+\textit{or,} \hspace{0.35cm} sinh \Big( \frac{x}{\sigma}\Big ) \Big( \frac{4\nu B}{\sigma^2 } - K(B + \frac{B\nu}{\mu_0 + gL}) \Big ) = K (A - C)x 
+\end{align*}
+\[\boxed{
+A - C = \frac{B}{Kx} sinh \Big( \frac{x}{\sigma}\Big ) \Big( \frac{4\nu }{\sigma^2 } - K(1+ \frac{\nu}{\mu_0 + gL}) \Big )
+}
+\]
+To obtain the values of the unknown parameters B and C, we impose boundary conditions. At the edge (x = $\pm$L) we have, normal stresses $\tau_{ix}$ and $\tau_{ex}$ as zero. Rewriting it, we have,
+\begin{align}
+C + \frac{D}{\sigma}cosh\Big ( \frac{L}{\sigma} \Big ) = 0\\
+A + \frac{B}{\sigma}cosh\Big ( \frac{L}{\sigma} \Big ) = -\frac{T}{4\nu}
+\end{align}
+Subtracting (49) - (48) we have: 
+\begin{align}
+(A - C) + (\frac{B - D}{\sigma})cosh\Big ( \frac{L}{\sigma} \Big ) = -\frac{T}{4\nu}
+\end{align}
+Plugging in A - C and B,D relationship in the equation we have: 
+\begin{align*}
+\frac{B}{Kx} sinh \Big( \frac{x}{\sigma}\Big ) \Big( \frac{4\nu }{\sigma^2 } - K(1+ \frac{\nu}{\mu_0 + gL}) \Big ) + \frac{1}{\sigma}\Big (B + \frac{B\nu}{\mu_0 + gL}\Big )cosh\Big ( \frac{L}{\sigma} \Big ) = -\frac{T}{4\nu}
+\end{align*}
+However we have to replace x in the above equation with L as we have been using boundary conditions in (48) - (49). The final form is: (taking out B common in the expression)
+\begin{align}
+\textbf{B} = -\frac{T}{4\nu} \Bigg ( \frac{1}{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma^2 L} - \frac{K}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big (  \frac{1}{\sigma} (1+ \frac{\nu}{\mu_0 + gL}) \Big )} \Bigg)
+\end{align}
+The value of D can be computed using its relationship with B which is $D = -\frac{\nu}{\mu_0 + gL} B$
+\begin{align}
+\textbf{D} = \frac{T}{4(\mu_0 + gL)} \Bigg ( \frac{1}{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma^2 L} - \frac{K}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big (  \frac{1}{\sigma} (1+ \frac{\nu}{\mu_0 + gL}) \Big )} \Bigg)
+\end{align}
+The value of C can be computed from (48) as $C = -\frac{D}{\sigma}cosh\Big ( \frac{L}{\sigma} \Big )$
+\begin{align}
+\textbf{C} = -\frac{T}{4(\mu_0 + gL)} \Bigg ( \frac{cosh\Big ( \frac{L}{\sigma} \Big )}{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma L} - \frac{K \sigma}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big ( 1+ \frac{\nu}{\mu_0 + gL} \Big )} \Bigg)
+\end{align}
+The value of A can be obtained from (49) as $A = -\frac{B}{\sigma}cosh\Big ( \frac{L}{\sigma} \Big ) -\frac{T}{4\nu}$
+\begin{align*}
+\textbf{A} = -\frac{T}{4(\nu)} \Bigg ( 1 - \frac{cosh\Big ( \frac{L}{\sigma} \Big )}{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma L} - \frac{K \sigma}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big ( 1+ \frac{\nu}{\mu_0 + gL} \Big )} \Bigg)
+\end{align*}
+\begin{align}
+\therefore \hspace{0.35cm}
+\textbf{A} = -\frac{T}{4(\nu)} \Bigg ( \frac{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma L} - \frac{K \sigma}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big ( \frac{\nu}{\mu_0 + gL} \Big )}{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma L} - \frac{K \sigma}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big ( 1+ \frac{\nu}{\mu_0 + gL} \Big )} \Bigg)
+\end{align}
+Thus the value of of $u_x$ is: 
+\begin{align*}
+u_x = -\frac{T}{4(\nu)} \Bigg ( \frac{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma L} - \frac{K \sigma}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big ( \frac{\nu}{\mu_0 + gL} \Big )}{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma L} - \frac{K \sigma}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big ( 1+ \frac{\nu}{\mu_0 + gL} \Big )} \Bigg)\textbf{x} \\ -\frac{T}{4\nu} \Bigg ( \frac{1}{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma^2 L} - \frac{K}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big (  \frac{1}{\sigma} (1+ \frac{\nu}{\mu_0 + gL}) \Big )} \Bigg) \textbf{sinh} \Big ( \frac{x}{\sigma} \Big )\\
+\end{align*}
+The value of $w_x$ is: 
+\begin{align*}
+w_x = -\frac{T}{4(\mu_0 + gL)} \Bigg ( \frac{cosh\Big ( \frac{L}{\sigma} \Big )}{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma L} - \frac{K \sigma}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big ( 1+ \frac{\nu}{\mu_0 + gL} \Big )} \Bigg)\textbf{x} + \\
+\frac{T}{4(\mu_0 + gL)} \Bigg ( \frac{1}{sinh \Big( \frac{L}{\sigma}\Big ) \Big ( \frac{4\nu}{\sigma^2 L} - \frac{K}{L} (1+ \frac{\nu}{\mu_0 + gL}) \Big ) + cosh\Big ( \frac{L}{\sigma} \Big ) \Big (  \frac{1}{\sigma} (1+ \frac{\nu}{\mu_0 + gL}) \Big )} \Bigg)\textbf{sinh} \Big ( \frac{x}{\sigma} \Big )
+\end{align*}
+\section*{Issues}
+Need some insights for calculating the length constant $\sigma$
 \begin{thebibliography}{9}
 	\bibitem{roth2012}
 	Bradley J Roth
 	\textit{The Mechanical Bidomain Model: A Review}
 	ISRN Tissue Eng. 2013
-	
 	\bibitem{roth2015}
 	 Sharma, Kharananda; Al-Asuoad, Nofe; Shillor, Meir; Roth, Bradley J.
 	\textit{Intracellular, extracellular, and membrane forces in remodeling and mechanotransduction: The mechanical bidomain model}
