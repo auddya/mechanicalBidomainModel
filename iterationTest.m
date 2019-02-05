@@ -1,21 +1,24 @@
 close all
 clear all
 %Initialisation
-N = 25;
+N = 250;
 L = 1.0;
 g = 1.0;
 mu_zero = 1.0;
 nu = 1.0;
 K = 1.0;
-mu = mu_zero + g*zeros(N+1,1); 
+T = 1.0;
+mu = mu_zero + g*zeros(N,1); 
 w = zeros(N,1); %Extracellular displacement
 u = zeros(N,1); %Intracellular displacement
 delta = (2*L)/(N-1); %Spacing along x direction
 %Apply Boundary Conditions
-u(1) = 4.5;
-w(1) = 4.5;
+u(1) = u(2) + (T*delta/4*nu);
+w(1) = w(2);
+u(N) = u(N-1) - (T*delta/4*nu);
+w(N) = w(N-1);
 mu(1) = mu_zero;
-iterations = 100;
+iterations = 1000;
 %Initialising mu 
 for i = 1:N
     mu(i) = mu_zero + (i-1)*delta*g;
