@@ -1,6 +1,6 @@
 close all
 clear all
-N = 101;
+N = 100;
 L = 0.005; %0.005m
 g = 100000; %100000 Pa/m
 mu_zero = 1000; %1000 Pa
@@ -11,7 +11,7 @@ w = zeros(N,1); %Extracellular displacement
 u = zeros(N,1); %Intracellular displacement
 x = zeros(N,1); %x position, useful when plotting
 delta = (2*L)/(N-1); %Spacing along x direction
-iterations = 100;
+iterations = 10000;
 for i = 1:N
     x(i) = L*(2*(i-1)/(N-1)-1); 
     mu(i) = mu_zero + g*x(i);
@@ -35,7 +35,7 @@ end
 for i = 1:N
     h(i) = u(i)-w(i);
 end 
-plot(x,w)  % if you want plot with x in mm, use ?plot(x*1000,h)?
+plot(x,h)  % if you want plot with x in mm, use ?plot(x*1000,h)?
 xlabel('x');
-ylabel('u - w');
-title('Difference between extracellular and intracellular displacements');
+ylabel('u-w');
+title('Difference between extracellular and intracellular displacement');
