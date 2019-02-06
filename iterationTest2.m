@@ -2,7 +2,7 @@ close all
 clear all
 N = 100;
 L = 0.005; %0.005m
-g = 100000; %100000 Pa/m
+g = 100000; %100000; %100000 Pa/m
 mu_zero = 1000; %1000 Pa
 nu = 1000; %1000 Pa
 K = 50000000000; %50GPa/m2
@@ -11,7 +11,7 @@ w = zeros(N,1); %Extracellular displacement
 u = zeros(N,1); %Intracellular displacement
 x = zeros(N,1); %x position, useful when plotting
 delta = (2*L)/(N-1); %Spacing along x direction
-iterations = 1000;
+iterations = 100;
 for i = 1:N
     x(i) = L*(2*(i-1)/(N-1)-1); 
     mu(i) = mu_zero + g*x(i);
