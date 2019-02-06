@@ -347,6 +347,18 @@ w_x = -\frac{T}{4(\mu_0 + gL)} \Bigg ( \frac{cosh\Big ( \frac{L}{\sigma} \Big )}
 \end{align*}
 \section*{Issues}
 Need some insights for calculating the length constant $\sigma$
+\newpage
+\section*{Perturbation Theory - 1/22/2019}
+The following result has been obtained using first order perturbation to obtain approximate analytical solutions.\\
+\begin{align*}
+u_0 = -\frac{T}{4(\nu + \mu)} \Big ( x + \frac{\mu}{\nu} \sigma \frac{sinh(\frac{x}{\sigma})}{cosh(\frac{L}{\sigma})}\Big )\\
+w_0 = -\frac{T}{4(\nu + \mu)} \Big ( x - \sigma \frac{sinh(\frac{x}{\sigma})}{cosh(\frac{L}{\sigma})}\Big )\\
+u_1 = c_1 e^{\sqrt{\phi_1}x} + c_2 e^{-\sqrt{\phi_1}x} - \frac{\phi_2 e^{-\sqrt{\phi_1}x}(e^{2\sqrt{\phi_1}x}Ei(-\sqrt{\phi_1 x}) + Ei(\sqrt{\phi_1 x}) - 2e^{\sqrt{\phi_1}x} ln(x))}{2\phi_1}\\
+w_1 = c_3 ln(x)\\
+Ei(x) = -\int_{-x}^{\infty} \frac{e^{-t}}{t} dx
+\end{align*}
+where Ei(x) is the Exponential Integral Function. 
+However this is different from the proposed guess for  $u_1$ which involved  consisting of sinh and cosh terms only. 
 \begin{thebibliography}{9}
 	\bibitem{roth2012}
 	Bradley J Roth
