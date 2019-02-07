@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 FEB 2019 09:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 FEB 2019 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1249,173 +1249,394 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--83
  []
 
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w(g_0).jpg, id
-=34, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w(g_0).jp
-g Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_0).jpg
+, id=34, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_0
+).jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w(g_0).jpg
->
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_0)
+.jpg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/u-w(g_0).jpg used on input line 131.
+ResultsNew/u-w2(g_0).jpg used on input line 131.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w(g_var).jpg, 
-id=35, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w(g_var).
-jpg Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_var).j
+pg, id=35, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_v
+ar).jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w(g_var).j
-pg>
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_va
+r).jpg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/u-w(g_var).jpg used on input line 135.
+ResultsNew/u-w2(g_var).jpg used on input line 135.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 135.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 135.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u(g_0).jpg, id=3
-6, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u(g_0).jpg 
-Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g_0).jpg, 
+id=36, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g_0).
+jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u(g_0).jpg>
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g_0).j
+pg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/u(g_0).jpg used on input line 139.
+ResultsNew/u2(g_0).jpg used on input line 139.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u(g_var).jpg, id
-=37, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u(g_var).jp
-g Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g_var).jpg
+, id=37, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g_var
+).jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u(g_var).jpg
->
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g_var)
+.jpg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/u(g_var).jpg used on input line 143.
+ResultsNew/u2(g_var).jpg used on input line 143.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w(g_0).jpg, id=3
-8, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w(g_0).jpg 
-Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2(g_0).jpg, 
+id=38, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2(g_0).
+jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w(g_0).jpg>
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2(g_0).j
+pg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/w(g_0).jpg used on input line 147.
+ResultsNew/w2(g_0).jpg used on input line 147.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w(g_var).jpg, id
-=39, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w(g_var).jp
-g Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2(g_var).jpg
+, id=39, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2(g_var
+).jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w(g_var).jpg
->
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2(g_var)
+.jpg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/w(g_var).jpg used on input line 151.
+ResultsNew/w2(g_var).jpg used on input line 151.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w2(g_0).jpg, i
-d=40, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w2(g_0).j
-pg Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w3(g_0).jpg
+, id=40, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w3(g_0
+).jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w2(g_0).jp
-g>
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w3(g_0)
+.jpg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/u-w2(g_0).jpg used on input line 164.
+ResultsNew/u-w3(g_0).jpg used on input line 164.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w2(g_var).jpg,
- id=41, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w2(g_var)
-.jpg Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w3(g_var).j
+pg, id=41, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w3(g_v
+ar).jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w2(g_var).
-jpg>
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w3(g_va
+r).jpg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/u-w2(g_var).jpg used on input line 168.
+ResultsNew/u-w3(g_var).jpg used on input line 168.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u2(g_0).jpg, id=
-42, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u2(g_0).jpg
- Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u3(g_0).jpg, 
+id=42, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u3(g_0).
+jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u2(g_0).jpg>
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u3(g_0).j
+pg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/u2(g_0).jpg used on input line 172.
+ResultsNew/u3(g_0).jpg used on input line 172.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u2(g_var).jpg, i
-d=43, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u2(g_var).j
-pg Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u3(g_var).jpg
+, id=43, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u3(g_var
+).jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u2(g_var).jp
-g>
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u3(g_var)
+.jpg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/u2(g_var).jpg used on input line 176.
+ResultsNew/u3(g_var).jpg used on input line 176.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w2(g_0).jpg, id=
-44, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w2(g_0).jpg
- Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w3(g_0).jpg, 
+id=44, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w3(g_0).
+jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w2(g_0).jpg>
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w3(g_0).j
+pg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/w2(g_0).jpg used on input line 180.
+ResultsNew/w3(g_0).jpg used on input line 180.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
-</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w2(g_var).jpg, i
-d=45, 562.1pt x 421.575pt>
-File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w2(g_var).j
-pg Graphic file (type jpg)
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w3(g_var).jpg
+, id=45, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w3(g_var
+).jpg Graphic file (type jpg)
 
-<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w2(g_var).jp
-g>
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w3(g_var)
+.jpg>
 Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
-Results/w2(g_var).jpg used on input line 184.
+ResultsNew/w3(g_var).jpg used on input line 184.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w4(g_0).jpg
+, id=46, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w4(g_0
+).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w4(g_0)
+.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u-w4(g_0).jpg used on input line 197.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w4(g_var).j
+pg, id=47, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w4(g_v
+ar).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w4(g_va
+r).jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u-w4(g_var).jpg used on input line 201.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u4(g_0).jpg, 
+id=48, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u4(g_0).
+jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u4(g_0).j
+pg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u4(g_0).jpg used on input line 205.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u4(g_var).jpg
+, id=49, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u4(g_var
+).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u4(g_var)
+.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u4(g_var).jpg used on input line 209.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w4(g_0).jpg, 
+id=50, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w4(g_0).
+jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w4(g_0).j
+pg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/w4(g_0).jpg used on input line 213.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w4(g_var).jpg
+, id=51, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w4(g_var
+).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w4(g_var)
+.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/w4(g_var).jpg used on input line 217.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w5(g_0).jpg
+, id=52, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w5(g_0
+).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w5(g_0)
+.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u-w5(g_0).jpg used on input line 230.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w5(g_var).j
+pg, id=53, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w5(g_v
+ar).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w5(g_va
+r).jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u-w5(g_var).jpg used on input line 234.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u5(g_0).jpg, 
+id=54, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u5(g_0).
+jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u5(g_0).j
+pg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u5(g_0).jpg used on input line 238.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u5(g_var).jpg
+, id=55, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u5(g_var
+).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u5(g_var)
+.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u5(g_var).jpg used on input line 242.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w5(g_0).jpg, 
+id=56, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w5(g_0).
+jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w5(g_0).j
+pg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/w5(g_0).jpg used on input line 246.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w5(g_var).jpg
+, id=57, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w5(g_var
+).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w5(g_var)
+.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/w5(g_var).jpg used on input line 250.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_0).jpg
+, id=58, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_0
+).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_0)
+.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u-w6(g_0).jpg used on input line 263.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_var).j
+pg, id=59, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_v
+ar).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_va
+r).jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u-w6(g_var).jpg used on input line 267.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_0).jpg, 
+id=60, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_0).
+jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_0).j
+pg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u6(g_0).jpg used on input line 271.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_var).jpg
+, id=61, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_var
+).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_var)
+.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/u6(g_var).jpg used on input line 275.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_0).jpg, 
+id=62, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_0).
+jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_0).j
+pg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/w6(g_0).jpg used on input line 279.
+(pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_var).jpg
+, id=63, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_var
+).jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_var)
+.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/w6(g_var).jpg used on input line 283.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
  
 AED: lastpage setting LastPage
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 191.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 290.
 
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-[2 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w(g_0).jpg>
- </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w(g_var).jpg>
- </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u(g_0).jpg> </U
-sers/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u(g_var).jpg> </Use
-rs/auddya/uw-me/2018/mechanicalBidomainModel//testResults/w(g_0).jpg> </Users/a
-uddya/uw-me/2018/mechanicalBidomainModel//testResults/w(g_var).jpg>] [3 </Users
-/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w2(g_0).jpg> </Users/
-auddya/uw-me/2018/mechanicalBidomainModel//testResults/u-w2(g_var).jpg> </Users
-/auddya/uw-me/2018/mechanicalBidomainModel//testResults/u2(g_0).jpg> </Users/au
-ddya/uw-me/2018/mechanicalBidomainModel//testResults/u2(g_var).jpg> </Users/aud
-dya/uw-me/2018/mechanicalBidomainModel//testResults/w2(g_0).jpg> </Users/auddya
-/uw-me/2018/mechanicalBidomainModel//testResults/w2(g_var).jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
+[2 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_0).
+jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_v
+ar).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g
+_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g
+_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2
+(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2
+(g_var).jpg>] [3 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults
+New/u-w3(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResul
+tsNew/u-w3(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testR
+esultsNew/u3(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testR
+esultsNew/u3(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//tes
+tResultsNew/w3(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//tes
+tResultsNew/w3(g_var).jpg>] [4 </Users/auddya/uw-me/2018/mechanicalBidomainMode
+l//testResultsNew/u-w4(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainMo
+del//testResultsNew/u-w4(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidoma
+inModel//testResultsNew/u4(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidoma
+inModel//testResultsNew/u4(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBido
+mainModel//testResultsNew/w4(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBido
+mainModel//testResultsNew/w4(g_var).jpg>] [5 </Users/auddya/uw-me/2018/mechanic
+alBidomainModel//testResultsNew/u-w5(g_0).jpg> </Users/auddya/uw-me/2018/mechan
+icalBidomainModel//testResultsNew/u-w5(g_var).jpg> </Users/auddya/uw-me/2018/me
+chanicalBidomainModel//testResultsNew/u5(g_0).jpg> </Users/auddya/uw-me/2018/me
+chanicalBidomainModel//testResultsNew/u5(g_var).jpg> </Users/auddya/uw-me/2018/
+mechanicalBidomainModel//testResultsNew/w5(g_0).jpg> </Users/auddya/uw-me/2018/
+mechanicalBidomainModel//testResultsNew/w5(g_var).jpg>] [6 </Users/auddya/uw-me
+/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_0).jpg> </Users/auddya/uw-
+me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_var).jpg> </Users/auddya
+/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_0).jpg> </Users/auddya
+/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_var).jpg> </Users/audd
+ya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_0).jpg> </Users/audd
+ya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_var).jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
 
 (./resultsOne.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 290.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
 Package rerunfilecheck Info: File `resultsOne.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31012 strings out of 492995
- 571261 string characters out of 6132704
- 664029 words of memory out of 5000000
- 34100 multiletter control sequences out of 15000+600000
+ 31165 strings out of 492995
+ 578375 string characters out of 6132704
+ 672040 words of memory out of 5000000
+ 34211 multiletter control sequences out of 15000+600000
  23424 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,73p,10418b,1173s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1430,10 +1651,10 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/tex-gyre/qcsb.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/public/tex-gyre/qcsr.pfb>
-Output written on resultsOne.pdf (3 pages, 292726 bytes).
+Output written on resultsOne.pdf (6 pages, 572937 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 60 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 

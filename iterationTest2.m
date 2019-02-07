@@ -1,3 +1,4 @@
+tic
 close all
 clear all
 N = 100;
@@ -11,7 +12,7 @@ w = zeros(N,1); %Extracellular displacement
 u = zeros(N,1); %Intracellular displacement
 x = zeros(N,1); %x position, useful when plotting
 delta = (2*L)/(N-1); %Spacing along x direction
-iterations = 100;
+iterations = 1000000;
 for i = 1:N
     x(i) = L*(2*(i-1)/(N-1)-1); 
     mu(i) = mu_zero + g*x(i);
@@ -39,3 +40,4 @@ plot(x,h)  % if you want plot with x in mm, use plot(x*1000,h)?
 xlabel('x');
 ylabel('u-w');
 title('Difference between intracellular and extracellular displacement');
+toc
