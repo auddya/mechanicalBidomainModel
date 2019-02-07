@@ -7,18 +7,18 @@ g = 100000; %100000; %100000 Pa/m
 mu_zero = 1000; %1000 Pa
 nu = 1000; %1000 Pa
 K = 50000000000; %50GPa/m2
-T = 200; %200Pa
+T = 200; %200Paextracellular displacement
 w = zeros(N,1); %Extracellular displacement
 u = zeros(N,1); %Intracellular displacement
 x = zeros(N,1); %x position, useful when plotting
 delta = (2*L)/(N-1); %Spacing along x direction
-iterations = 100;
+iterations = 1000000;
 for i = 1:N
     x(i) = L*(2*(i-1)/(N-1)-1); 
     mu(i) = mu_zero + g*x(i);
 end
-e = zeros(100,1);
-k = 0;
+%e = zeros(101,1);
+p = 0; %Counter for Computation Time Array
 for over = 1:0.01:1.99
   tic
   for k = 1:iterations
@@ -39,14 +39,15 @@ for over = 1:0.01:1.99
     u(N) = u(N-1) - (T*delta/(4*nu));
     w(N) = w(N-1);
   end 
-  k = k + 1;
-  et = toc
+  p = p + 1;
+  et(p) = toc; %Stores the time for each step
 end
+[val,idx] = min(et) %Outputs minimum value and index of et
 for i = 1:N
     h(i) = u(i)-w(i);
 end 
 plot(x,h)  % if you want plot with x in mm, use plot(x*1000,h)?
 xlabel('x');
 ylabel('u-w');
-title('Difference between intracellular and extracellular displacement');
+title('Difference between u and w');
 toc
