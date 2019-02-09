@@ -122,7 +122,7 @@ xlabel('x');
 ylabel('u-w');
 title('Difference between extracellular and intracellular displacement');
 \end{lstlisting}
-\begin{figure}[htb]
+\begin{figure}
 	\begin{center}
 		%
 		\subfigure[Difference in displacements for g=0]{%
@@ -155,7 +155,7 @@ Comparison of results for g=0 and g=$10^5$ Pa/m (Iteration: 100). Elapsed time i
 	}%
 	\label{fig:subfigures2}
 \end{figure}
-\begin{figure}[htb]
+\begin{figure}
 	\begin{center}
 		%
 		\subfigure[Difference in displacements for g=0]{%
@@ -188,7 +188,7 @@ Comparison of results for g=0 and g=$10^5$ Pa/m (Iteration: 100). Elapsed time i
 	}%
 	\label{fig:subfigures3}
 \end{figure}
-\begin{figure}[htb]
+\begin{figure}
 	\begin{center}
 		%
 		\subfigure[Difference in displacements for g=0]{%
@@ -221,7 +221,7 @@ Comparison of results for g=0 and g=$10^5$ Pa/m (Iteration: 100). Elapsed time i
 	}%
 	\label{fig:subfigures4}
 \end{figure}
-\begin{figure}[htb]
+\begin{figure}
 	\begin{center}
 		%
 		\subfigure[Difference in displacements for g=0]{%
@@ -254,7 +254,7 @@ Comparison of results for g=0 and g=$10^5$ Pa/m (Iteration: 100). Elapsed time i
 	}%
 	\label{fig:subfigures5}
 \end{figure}
-\begin{figure}[htb]
+\begin{figure}
 	\begin{center}
 		%
 		\subfigure[Difference in displacements for g=0]{%
@@ -287,19 +287,51 @@ Comparison of results for g=0 and g=$10^5$ Pa/m (Iteration: 100). Elapsed time i
 	}%
 	\label{fig:subfigures6}
 \end{figure}
+\section*{Difference of displacements as a function of stiffness gradient}
+\begin{figure}[htb]
+  \begin{center}
+ 	 \includegraphics[scale=0.3]{/testResultsNew/variationG.jpg}
+	\caption{Difference in intracellular and extracellular displacements about x = 0 as a function of \textbf{g}}
+	\label{fig:uwG}
+ \end{center}
+\end{figure}
 \newpage
-\section*{SOR Iterations against time}
-\begin{table}[htb]
-	\centering
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{lll}
-			Iterations & Time (seconds) & Relaxation Value \\
-			100        & 0.000535       & 1.94             \\
-			1000       & 0.0055         & 1.87             \\
-			10000      & 0.0541         & 1.95             \\
-			100000     & 0.5556         & 1.92             \\
-			1000000    & 5.4486         & 1.91            
-		\end{tabular}%
-	}
-\end{table}
+\section*{Over Relaxation}
+Variation of computation time with linearly increasing over relaxation parameter. The \textbf{stars} indicate the minimum value in each iteration limit. The figures below illustrate with iteration ranges from $10^2$ to $10^4$ 
+\begin{figure}[htb]
+  \begin{center}
+	 \includegraphics[scale = 0.85]{/testResultsNew/ite2.jpg}
+	 \caption{Iteration range: 100 - 1000}
+	 \label{fig:ite2}
+  \end{center}
+\end{figure}
+\begin{figure}[htb]
+  \begin{center}
+	 \includegraphics[scale = 0.85]{/testResultsNew/ite3.jpg}
+	 \caption{Iteration range: 1000 - 10000}
+	 \label{fig:ite3}
+  \end{center}
+\end{figure}
+\begin{figure}[htb]
+  \begin{center}
+	 \includegraphics[scale = 0.85]{/testResultsNew/ite4.jpg}
+	 \caption{Iteration range: 30000 - 90000}
+	 \label{fig:ite4}
+  \end{center}
+\end{figure}
+%\newpage
+%\section*{SOR Iterations against time}
+%\begin{table}[htb]
+%	\centering
+%	\resizebox{\textwidth}{!}{%
+%		\begin{tabular}{lll}
+%			Iterations & Time (seconds) & Relaxation Value \\
+%			100        & 0.000535       & 1.94             \\
+%			1000       & 0.0055         & 1.87             \\
+%			10000      & 0.0541         & 1.95             \\
+%			100000     & 0.5556         & 1.92             \\
+%			1000000    & 5.4486         & 1.91            
+%		\end{tabular}%
+%	}
+%\end{table}
 \end{document}

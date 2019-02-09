@@ -12,7 +12,7 @@ w = zeros(N,1); %Extracellular displacement
 u = zeros(N,1); %Intracellular displacement
 x = zeros(N,1); %x position, useful when plotting
 delta = (2*L)/(N-1); %Spacing along x direction
-iterations = [3000 5000 7000 9000];
+iterations = [2000 4000 6000 80];
 for i = 1:N
     x(i) = L*(2*(i-1)/(N-1)-1); 
     mu(i) = mu_zero + g*x(i);
@@ -55,7 +55,7 @@ for s=1:size(iterations,2)
  set(gca, 'XTickLabel', labels); % Change x-axis ticks labels.
 end %end of iterations
 [val,idx] = min(et); %Outputs minimum value and index of et
-legend('It = 30000','It = 50000','It = 70000','It = 90000')
+legend('It = 2000','It = 4000','It = 6000','It = 8000')
 % xlim([-0.00002 0.00002]);
 % ylim([-0.0000003 0.0000003]);
 % for i = 1:N

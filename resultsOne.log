@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 FEB 2019 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 FEB 2019 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1583,62 +1583,121 @@ Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
 ResultsNew/w6(g_var).jpg used on input line 283.
 (pdftex.def)             Requested size: 181.18439pt x 135.88452pt.
 
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/variationG.jp
+g, id=64, 1445.4pt x 852.18375pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/variatio
+nG.jpg Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/variation
+G.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/variationG.jpg used on input line 293.
+(pdftex.def)             Requested size: 433.62335pt x 255.65709pt.
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 290.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 297.
 
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
+[2 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_0).
+jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g_v
+ar).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g
+_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u2(g
+_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2
+(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w2
+(g_var).jpg>] [3 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResults
+New/u-w3(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResul
+tsNew/u-w3(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testR
+esultsNew/u3(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testR
+esultsNew/u3(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//tes
+tResultsNew/w3(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//tes
+tResultsNew/w3(g_var).jpg>] [4 </Users/auddya/uw-me/2018/mechanicalBidomainMode
+l//testResultsNew/u-w4(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainMo
+del//testResultsNew/u-w4(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidoma
+inModel//testResultsNew/u4(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidoma
+inModel//testResultsNew/u4(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBido
+mainModel//testResultsNew/w4(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBido
+mainModel//testResultsNew/w4(g_var).jpg>] [5 </Users/auddya/uw-me/2018/mechanic
+alBidomainModel//testResultsNew/u-w5(g_0).jpg> </Users/auddya/uw-me/2018/mechan
+icalBidomainModel//testResultsNew/u-w5(g_var).jpg> </Users/auddya/uw-me/2018/me
+chanicalBidomainModel//testResultsNew/u5(g_0).jpg> </Users/auddya/uw-me/2018/me
+chanicalBidomainModel//testResultsNew/u5(g_var).jpg> </Users/auddya/uw-me/2018/
+mechanicalBidomainModel//testResultsNew/w5(g_0).jpg> </Users/auddya/uw-me/2018/
+mechanicalBidomainModel//testResultsNew/w5(g_var).jpg>] [6 </Users/auddya/uw-me
+/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_0).jpg> </Users/auddya/uw-
+me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_var).jpg> </Users/auddya
+/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_0).jpg> </Users/auddya
+/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_var).jpg> </Users/audd
+ya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_0).jpg> </Users/audd
+ya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_var).jpg>] [7 </User
+s/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/variationG.jpg>]
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite2.jpg, id=
+193, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite2.jpg
+ Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite2.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/ite2.jpg used on input line 303.
+(pdftex.def)             Requested size: 477.78726pt x 358.34042pt.
+
+Overfull \hbox (24.81937pt too wide) in paragraph at lines 303--304
+ [] 
+ []
+
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite3.jpg, id=
+194, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite3.jpg
+ Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite3.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/ite3.jpg used on input line 310.
+(pdftex.def)             Requested size: 477.78726pt x 358.34042pt.
+
+Overfull \hbox (24.81937pt too wide) in paragraph at lines 310--311
+ [] 
+ []
+
+
+</Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite4.jpg, id=
+195, 562.1pt x 421.575pt>
+File: /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite4.jpg
+ Graphic file (type jpg)
+
+<use /Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite4.jpg>
+Package pdftex.def Info: /Users/auddya/uw-me/2018/mechanicalBidomainModel//test
+ResultsNew/ite4.jpg used on input line 317.
+(pdftex.def)             Requested size: 477.78726pt x 358.34042pt.
+
+Overfull \hbox (24.81937pt too wide) in paragraph at lines 317--318
+ [] 
+ []
+
 
 AED: lastpage setting LastPage
-[2] [3 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2(g
-_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w2
-(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/
-u2(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/
-u2(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNe
-w/w2(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNe
-w/w2(g_var).jpg>] [4 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testRes
-ultsNew/u-w3(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//testR
-esultsNew/u-w3(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//t
-estResultsNew/u3(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel//t
-estResultsNew/u3(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel/
-/testResultsNew/w3(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidomainModel/
-/testResultsNew/w3(g_var).jpg>] [5 </Users/auddya/uw-me/2018/mechanicalBidomain
-Model//testResultsNew/u-w4(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBidoma
-inModel//testResultsNew/u-w4(g_var).jpg> </Users/auddya/uw-me/2018/mechanicalBi
-domainModel//testResultsNew/u4(g_0).jpg> </Users/auddya/uw-me/2018/mechanicalBi
-domainModel//testResultsNew/u4(g_var).jpg> </Users/auddya/uw-me/2018/mechanical
-BidomainModel//testResultsNew/w4(g_0).jpg> </Users/auddya/uw-me/2018/mechanical
-BidomainModel//testResultsNew/w4(g_var).jpg>] [6 </Users/auddya/uw-me/2018/mech
-anicalBidomainModel//testResultsNew/u-w5(g_0).jpg> </Users/auddya/uw-me/2018/me
-chanicalBidomainModel//testResultsNew/u-w5(g_var).jpg> </Users/auddya/uw-me/201
-8/mechanicalBidomainModel//testResultsNew/u5(g_0).jpg> </Users/auddya/uw-me/201
-8/mechanicalBidomainModel//testResultsNew/u5(g_var).jpg> </Users/auddya/uw-me/2
-018/mechanicalBidomainModel//testResultsNew/w5(g_0).jpg> </Users/auddya/uw-me/2
-018/mechanicalBidomainModel//testResultsNew/w5(g_var).jpg>] [7 </Users/auddya/u
-w-me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_0).jpg> </Users/auddya
-/uw-me/2018/mechanicalBidomainModel//testResultsNew/u-w6(g_var).jpg> </Users/au
-ddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_0).jpg> </Users/au
-ddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/u6(g_var).jpg> </Users/
-auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_0).jpg> </Users/
-auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/w6(g_var).jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
-
-(./resultsOne.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+[8 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite2.jpg>]
+[9 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite3.jpg>]
+[10 </Users/auddya/uw-me/2018/mechanicalBidomainModel//testResultsNew/ite4.jpg>
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
+ (./resultsOne.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
 Package rerunfilecheck Info: File `resultsOne.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31167 strings out of 492995
- 578391 string characters out of 6132704
- 672040 words of memory out of 5000000
- 34211 multiletter control sequences out of 15000+600000
- 23424 words of font info for 34 fonts, out of 8000000 for 9000
+ 31200 strings out of 492995
+ 579814 string characters out of 6132704
+ 673312 words of memory out of 5000000
+ 34232 multiletter control sequences out of 15000+600000
+ 26458 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,73p,10418b,1173s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/l
@@ -1652,10 +1711,10 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/tex-gyre/qcsb.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/public/tex-gyre/qcsr.pfb>
-Output written on resultsOne.pdf (7 pages, 575181 bytes).
+Output written on resultsOne.pdf (10 pages, 706999 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 86 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 
