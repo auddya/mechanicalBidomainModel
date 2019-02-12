@@ -59,15 +59,15 @@ for over = 1.00:0.01:1.99
  for i = 1:N
  h(i) = ubackup(i)-wbackup(i);
  end
- plot(wbackup,h)
+ plot(x,ubackup)
  %overc = 0;
  %hold on
  %legend('tolerance = 1e-16')
  %set(gca,'XTick',[0 10 20 30 40 50 60 70 80 90 100]);
  %set(gca,'XTickLabel',[1 1.09 1.19 1.29 1.39 1.49 1.59 1.69 1.79 1.89]);
  xlabel('Length');
- ylabel('w');
- title('Extracellular Displacement');
+ ylabel('u');
+ title('Intracellular Displacement');
  %xlim([-0.00002 0.00002]);
  %ylim([-0.0000003 0.0000003]);
  toc
