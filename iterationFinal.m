@@ -17,8 +17,8 @@ for i = 1:N
     mu(i) = mu_zero + g*x(i);
 end
 overc = 0;
-resitol = 1e-15;
-for over = 1.0:0.01:1.99
+resitol = 1e-16;
+for over = 1.00:0.01:1.99
   overc = overc+1;  
   residmax = 1000000000;
   kay = 0;
@@ -47,14 +47,27 @@ for over = 1.0:0.01:1.99
 %   kay
 %   residmax
 %   toc
+ ubackup = u;
+ wbackup = w;
  u(1:end) = 0.0;
  w(1:end) = 0.0;
  kay_store(overc) = kay;
  residmax_store(overc) = residmax;
  end
- pcount = 1:1:overc; %Over relaxation Parameter count
- plot(pcount, kay_store)
- overc = 0;
- hold on
- legend('tolerance = 1e-15')
- set(gca,'XTick',[1 5 9 10] );
+ %pcount = 1:1:overc; %Over relaxation Parameter count
+ %plot(pcount, kay_store)
+ for i = 1:N
+ h(i) = ubackup(i)-wbackup(i);
+ end
+ plot(wbackup,h)
+ %overc = 0;
+ %hold on
+ %legend('tolerance = 1e-16')
+ %set(gca,'XTick',[0 10 20 30 40 50 60 70 80 90 100]);
+ %set(gca,'XTickLabel',[1 1.09 1.19 1.29 1.39 1.49 1.59 1.69 1.79 1.89]);
+ xlabel('Length');
+ ylabel('w');
+ title('Extracellular Displacement');
+ %xlim([-0.00002 0.00002]);
+ %ylim([-0.0000003 0.0000003]);
+ toc
