@@ -29,10 +29,10 @@ for s=1:size(iterations,2)
         A(i) = 8*mu(i) + K*delta*delta;
         C = 8*nu + K*delta*delta;
         B = K*delta*delta;
-        resi_u(i) = (a(i)*B + A(i)*b(i))/(A(i)*C - B*B);
-        u(i) = u(i) + over*(resi_u(i) - u(i));
-        resi_w(i) = (a(i)/A(i)) + (B/A(i))*((a(i)*B + A(i)*b(i))/(A(i)*C - B*B));
-        w(i) = w(i) + over*(resi_w(i) - w(i)); 
+        resi_u(i) = (a(i)*B + A(i)*b(i))/(A(i)*C - B*B) - u(i);
+        u(i) = u(i) + over*(resi_u(i));
+        resi_w(i) = (a(i)/A(i)) + (B/A(i))*((a(i)*B + A(i)*b(i))/(A(i)*C - B*B)) - w(i);
+        w(i) = w(i) + over*(resi_w(i)); 
     end
     %Apply Boundary Conditions
     u(1) = u(2) + (T*delta/(4*nu));
