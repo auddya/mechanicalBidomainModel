@@ -19,7 +19,7 @@ end
 %overc = 0;
 %for over = 1.8:0.1:1.9
 %  overc = overc+1;  
-  over = 1.1
+  over = 1.8
   residmax = 1000000000;
   resitol = 1e-15;
   kay = 0;
