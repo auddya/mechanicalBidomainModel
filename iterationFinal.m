@@ -2,11 +2,11 @@ tic
 close all
 clear all
 N = 100;
-L = 0.005; %0.005m
-g = 100000; %100000 Pa/m
-mu_zero = 1000; %1000 Pa
-nu = 1000; %1000 Pa
-K = 50000000000; %50GPa/m2
+L = 0.0005; %0.005m
+g = 60000000; %100000 Pa/m
+mu_zero = 40000; %1000 Pa
+nu = mu_zero; %1000 Pa
+K = 2000000000000; %50GPa/m2
 T = 200; %200Pa
 w = zeros(N,1); %Extracellular displacement
 u = zeros(N,1); %Intracellular displacement
@@ -59,15 +59,18 @@ for over = 1.00:0.01:1.99
  for i = 1:N
  h(i) = ubackup(i)-wbackup(i);
  end
- plot(x,ubackup)
+ plot(x,h)
  %overc = 0;
  %hold on
  %legend('tolerance = 1e-16')
  %set(gca,'XTick',[0 10 20 30 40 50 60 70 80 90 100]);
  %set(gca,'XTickLabel',[1 1.09 1.19 1.29 1.39 1.49 1.59 1.69 1.79 1.89]);
- xlabel('Length');
- ylabel('u');
- title('Intracellular Displacement');
+ xlabel('Length (in microns)');
+ ylabel('u-w(in microns)');
+ title('u-w');
+ xt = arrayfun(@num2str,get(gca,'xtick')*10^6,'un',0)
+ yt = arrayfun(@num2str,get(gca,'ytick')*10^6,'un',0)
+ set(gca,'xticklabel',xt,'yticklabel',yt)
  %xlim([-0.00002 0.00002]);
  %ylim([-0.0000003 0.0000003]);
  toc
