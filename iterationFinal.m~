@@ -36,6 +36,8 @@ for over = 1.00:0.01:1.99
         u(i) = u(i) + over*(resi_u(i));
         resi_w(i) = (a(i)/A(i)) + (B/A(i))*((a(i)*B + A(i)*b(i))/(A(i)*C - B*B)) - w(i);
         w(i) = w(i) + over*(resi_w(i)); 
+        stressexx(i) = 4*mu(i)*eexx(i);
+        stresseyy
       end
     %Apply Boundary Conditions
     u(1) = u(2) + (T*delta/(4*nu));
@@ -57,18 +59,10 @@ for over = 1.00:0.01:1.99
  wbackup = w;
  eixxbackup = eixx;
  eexxbackup = eexx;
- for i=1:N
-     stressexx(i) = 4*mu(i)*eexxbackup(i);
-     stressixx(i) = 4*nu*eixxbackup(i);
- end 
- stressebackup = stressexx;
- stressibackup = stressixx;
  u(1:end) = 0.0;
  w(1:end) = 0.0;
  eixx(1:end) = 0.0;
  eexx(1:end) = 0.0;
- stressexx(1:end) = 0.0;
- stressixx(1:end) = 0.0;
  kay_store(overc) = kay;
  residmax_store(overc) = residmax;
  end
@@ -77,18 +71,18 @@ for over = 1.00:0.01:1.99
  for i = 1:N
  h(i) = ubackup(i)-wbackup(i);
  end
- plot(x,stressebackup)
+ plot(x,eixxbackup)
  hold on
- plot(x,stressibackup)
- legend('intra stress','extra stress');
- overc = 0;
+ plot(x,eexxbackup)
+ legend('intra strain','extra strain');
+ %overc = 0;
  %hold on
  %legend('tolerance = 1e-16')
  %set(gca,'XTick',[0 10 20 30 40 50 60 70 80 90 100]);
  %set(gca,'XTickLabel',[1 1.09 1.19 1.29 1.39 1.49 1.59 1.69 1.79 1.89]);
  xlabel('Length (in microns)');
- ylabel('\tau_{xx}');
- title('Stress');
+ ylabel('\epsilon_{xx}');
+ title('Strain');
  xt = arrayfun(@num2str,get(gca,'xtick')*10^6,'un',0);
  yt = arrayfun(@num2str,get(gca,'ytick'),'un',0);
  set(gca,'xticklabel',xt,'yticklabel',yt)
